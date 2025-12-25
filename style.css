@@ -152,17 +152,14 @@ nav a {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
-.info h2 {
-  font-size: 2.2rem;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.8rem;
-  text-align: left;
+.text-content {
+  display: flex;
+  flex-direction: column; /* stack heading + paragraph vertically */
+  gap: 1rem;              /* space between h2 and p */
 }
 
-.info p {
-  font-size: 1rem;
-  color: var(--gray);
-  max-width: none;
+.text-content h2,
+.text-content p {
   text-align: left;
 }
 
