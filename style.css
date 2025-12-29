@@ -252,10 +252,10 @@ nav a {
 
   /* HEADER */
   .head {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
     padding: 1rem 5%;
-    gap: 0.5rem;
   }
 
   .head img {
@@ -264,11 +264,12 @@ nav a {
   }
 
   nav ul {
-    flex-direction: column;
+    display: flex; /* single row */
+    flex-direction: row; /* horizontal */
     align-items: center;
-    gap: 0.75rem;
-    width: 100%;
-    margin-top: 0.5rem;
+    gap: 1rem;
+    margin: 0; /* remove top margin */
+    padding: 0;
   }
 
   nav a {
@@ -277,16 +278,17 @@ nav a {
 
   /* CTA BUTTONS */
   .form {
-    flex-direction: column;
+    display: flex;
+    justify-content: center; /* center buttons horizontally */
     gap: 1rem;
+    flex-wrap: wrap;
     margin: 2rem 5% 4rem;
   }
 
   .form button {
-    width: 100%;
-    max-width: 280px;
     font-size: clamp(0.85rem, 3vw, 0.95rem);
     padding: 0.8rem 1.5rem;
+    min-width: 140px;
   }
 
   .btn-1 p {
